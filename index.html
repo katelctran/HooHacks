@@ -38,6 +38,30 @@
         background-color: white;
         color: blue;
     }
+    .row {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .side {
+        flex: 30%;
+        background-color: white;
+        padding: 20px;
+    }
+    .main {
+        flex: 70%;
+        background-color: white;
+        padding: 20px;
+    }
+    .fakeimage {
+        background-color: gray;
+        width: 100%;
+        padding: 20px;
+    }
+    .footer {
+        padding: 20px;
+        text-align: center;
+        background: #ddd;
+    }
     @media screen and (max-width: 700px) {
         .row {
             flex-direction: column;
@@ -64,6 +88,16 @@
         <a href="#">Link</a>
         <a href="#">Link</a>
         <a href="#">Link</a>
+    </div>
+
+    <div class="row">
+        <div class="side">
+            <h2>Our Story</h2>
+            <div class="fakeimage" style-="height:200px;">Image</div>
+        </div>
+        <p> Paragraph here </p>
+        <h3>More Text</h3>
+        <p> Paragraph here </p>
     </div>
 </body>
 </html>
