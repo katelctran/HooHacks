@@ -13,16 +13,31 @@
     * {
         box-sizing: border-box;
     }
-    .header h1 {
+    .header {
         padding: 100px;
         text-align: center;
         background: burlywood;
         color: darkred;
+    }
+    .header h1 {
         font-size: 50px
+    }
+    @media screen and (max-width: 700px) {
+        .row {
+            flex-direction: column;
+        }
+    }
+    @media screen and (max-width: 400px) {
+        .navbar a {
+            float: none;
+            width: 100%;
+        }
     }
     </style>
 </head>
 <body>
-    <h1> WahooWay </h1>
+    <div class="header">
+        <h1> WahooWay </h1>
+    </div>
 </body>
 </html>
